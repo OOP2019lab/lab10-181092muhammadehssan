@@ -77,7 +77,7 @@ void course::task2_addstudent(student *s_ptr)
 }
 void course::task3_dropcourse(student *s_ptr)
 {
-	bool flag=0;
+	
 	for(int i=0;i<4;i++)
 	{
 		if(this->s[i]==s_ptr)
@@ -88,6 +88,5 @@ void course::task3_dropcourse(student *s_ptr)
 			this->s[i]->task3_dropcourse(this);
 		}
 	}
-	if(flag==0)
-		cout<<"not registred"<<endl;
+	
 }
